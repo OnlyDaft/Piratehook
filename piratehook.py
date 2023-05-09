@@ -2,6 +2,23 @@ import requests
 import os
 import time
 import threading
+from pystyle import *
+from pystyle import Anime, Colorate, Colors, Center, System, Write
+
+System.Size(140, 40)
+System.Title("Piratehook")
+System.Clear()
+Anime.Fade(Center.Center("Piratehook"),
+           Colors.blue_to_purple,
+           Colorate.Vertical,
+           interval=0.5,
+           enter=True)
+
+
+def stage(text: str) -> str:
+    return print(
+        f"""{Col.Symbol('...', Col.cyan, Col.purple)} {Col.blue}{text}{Col.reset}"""
+    )
 
 spammer_running = False
 stop_spamming = False
