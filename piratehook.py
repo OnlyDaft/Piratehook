@@ -53,7 +53,7 @@ while True:
         webhook_url = input()
         if not webhook_url.startswith("https://discord.com/api/webhooks/"): #replace this with actual webhook
             print("Invalid webhook! Going back to menu...")
-            time.sleep(3)  # Wait for 3 seconds
+            time.sleep(3)  
             continue  # Return to the menu
         else:
             print("Enter the message to spam:")
@@ -72,8 +72,8 @@ while True:
         webhook_url = input()
         if not webhook_url.startswith("https://discord.com/api/webhooks/"):
             print("Invalid webhook! Going back to menu...")
-            time.sleep(3)  # Wait for 3 seconds
-            continue  # Return to the menu
+            time.sleep(3)  
+            continue  
         else:
             headers = {"Authorization": "Bot <your_bot_token>"}
             response = requests.delete(webhook_url, headers=headers)
@@ -82,7 +82,7 @@ while True:
             else:
                 print(f"Error deleting webhook: {response.status_code}")
             print("Going back to menu...")
-            time.sleep(3)  # Wait for 3 seconds
+            time.sleep(3)  
     else:
         print("Invalid choice. Please try again.")
-        time.sleep(3)  # Wait for 3 seconds
+        time.sleep(3)  
