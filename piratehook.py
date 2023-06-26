@@ -51,7 +51,7 @@ while True:
     if choice == "1":
         print("Enter the webhook URL:")
         webhook_url = input()
-        if not webhook_url.startswith("https://discord.com/api/webhooks/"): #replace this with actual webhook
+        if not webhook_url.startswith("https://discord.com/api/webhooks/"): 
             print("Invalid webhook! Going back to menu...")
             time.sleep(3)  
             continue  # Return to the menu
